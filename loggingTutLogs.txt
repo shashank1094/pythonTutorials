@@ -1,0 +1,10 @@
+2017-12-23 19:48:29,214 - __main__ - INFO - Hello baby
+2017-12-23 19:48:29,214 - __main__ - INFO - Start reading database
+2017-12-23 19:48:29,214 - __main__ - DEBUG - Records: {'john': 55, 'tom': 66}
+2017-12-23 19:48:29,214 - __main__ - INFO - Updating records ...
+2017-12-23 19:48:29,214 - __main__ - INFO - Finish updating records
+2018-01-09 17:31:38,469 - __main__ - INFO - Hello baby
+2018-01-09 17:31:38,469 - __main__ - INFO - Start reading database
+2018-01-09 17:31:38,469 - __main__ - DEBUG - Records: {'john': 55, 'tom': 66}
+2018-01-09 17:31:38,469 - __main__ - INFO - Updating records ...
+2018-01-09 17:31:38,469 - __main__ - INFO - Finish updating records
