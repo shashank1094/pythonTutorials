@@ -4,3 +4,4 @@
 from modulesTut2 import *
 
 f()
+print(__file__)
