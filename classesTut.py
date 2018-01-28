@@ -4,15 +4,18 @@ class student:
 
     @property
     def name(self):
-        return self.name
+        return self.__name
 
     @name.setter
     def name(self, name):
-        self.name = name
+        if type(name) != str:
+            self.__name = None
+        else:
+            self.__name = name
 
 
 s1 = student("shashank")
-print(s1)
+print(s1.name)
 # x = "xtop"
 # y = "ytop"
 #
