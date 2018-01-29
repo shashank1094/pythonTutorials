@@ -1,4 +1,10 @@
+# https://www.python-course.eu/python3_slots.php
+
+
 class student:
+    """Here goes the description for the class."""
+
+    # __slots__ = ("__name",)
     def __init__(self, temp_name):
         self.name = temp_name
 
@@ -16,6 +22,12 @@ class student:
 
 s1 = student("shashank")
 print(s1.name)
+
+print("DICT OF OBJECT :: ", s1.__dict__)
+print("DICT OF CLASS :: ", student.__dict__)
+print("DIR OF OBJECT :: ", dir(s1))
+print("DIR OF CLASS :: ", dir(student))
+
 # x = "xtop"
 # y = "ytop"
 #
