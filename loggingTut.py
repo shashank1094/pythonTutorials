@@ -23,7 +23,7 @@ logger.setLevel(logging.DEBUG)
 handler = logging.FileHandler('loggingTutLogs.txt')
 handler.setLevel(logging.DEBUG)
 # create a logging format
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(module)s - %(message)s')
 handler.setFormatter(formatter)
 # add the handlers to the logger
 logger.addHandler(handler)
