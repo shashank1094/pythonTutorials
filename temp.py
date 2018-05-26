@@ -1,3 +1,70 @@
+def fun(a, b, c):
+    print(a, b, c)
+
+
+# A call with unpacking of dictionary
+d = {'a': 2, 'b': 4, 'c': 10}
+fun(**d)
+
+
+# A Python program to demonstrate packing of
+# dictionary items using **
+def fun(**kwargs):
+    # kwargs is a dict
+    print(type(kwargs))
+
+    # Printing dictionary items
+    for key in kwargs:
+        print("%s = %s" % (key, kwargs[key]))
+
+
+# Driver code
+fun(name="geeks", ID="101", language="Python")
+# import subprocess
+# subprocess.call('jar tvf abc.jar ')
+#
+# # import os
+# # os.system('jar tvf abc.jar')
+
+
+# while True:
+#     try:
+#         1 / 0
+#     except Exception:
+#         raise
+#     finally:
+#         break  # discards the exception
+#
+# print('hell')  # it does print indeed
+
+
+# final_dict = {'some_company_100': {'key1': 'value1',
+#                                    'key2': 'value2',
+#                                    'key3': 'value3',
+#                                    'key4': 'value4',
+#                                    'key5': 'value5',
+#                                    'key6': {'key6_1': 'value6_1', 'key6_2': 'value6_2'},
+#                                    'key7': 'value7'},
+#               'some_company_101': {'key1': 'valuea',
+#                                    'key2': 'valueb',
+#                                    'key3': 'valuec',
+#                                    'key4': 'valued',
+#                                    'key5': 'valuee',
+#                                    'key6': {'keyf_1': 'valuef_1', 'keyf_2': 'valuef_2'},
+#                                    'key7': 'value7'}}
+#
+# for key, value in final_dict.items():
+#     flag = 0
+#     temp = []
+#     for k, v in value.items():
+#         if isinstance(v, dict):
+#             temp.append(v)
+#             flag = 1
+#     if flag == 1:
+#         for
+# print(final_dict)
+
+
 # def f():
 #     s = "Perl"
 #     print(s)
