@@ -7,8 +7,5 @@ setup(
     author="Shashank Singh",
     author_email="shashank.singh1094@gmail.com",
     description="This is the description.",
-    url="https://github.com/shashank1094/pythonTutorials",
-    project_urls={
-        "Source Code": "https://github.com/shashank1094/pythonTutorials"
-    }
+    url="https://github.com/shashank1094/pythonTutorials"
 )

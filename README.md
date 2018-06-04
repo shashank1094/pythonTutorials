@@ -12,3 +12,27 @@ Most important tutorials : [Link](https://www.python-course.eu/)
 5. [Importing modules and packages](https://docs.python.org/3/tutorial/modules.html)
 6. [Different printing styles...print()](https://docs.python.org/3/tutorial/inputoutput.html)
 7. [Decorators](https://www.thecodeship.com/patterns/guide-to-python-function-decorators/) , [Another Link](https://www.python-course.eu/python3_decorators.php)
+8. [SetupTools](http://setuptools.readthedocs.io/en/latest/setuptools.html#installing-setuptools)
+9. 
+
+# Building Python From Source LINUX
+
+```
+  sudo apt-get install -y build-essential git libexpat1-dev libssl-dev zlib1g-dev \
+  libncurses5-dev libbz2-dev liblzma-dev \
+  libsqlite3-dev libffi-dev tcl-dev linux-headers-$(uname -r) libgdbm-dev \
+  libreadline-dev tk tk-dev
+
+  Download and Extract File 
+  
+  cd cpython && ./configure --prefix=/usr \
+  --enable-loadable-sqlite-extensions \
+  --enable-shared \
+  --with-lto \
+  --enable-optimizations \
+  --with-system-expat \
+  --with-system-ffi \
+  --enable-ipv6 --with-threads --with-pydebug --disable-rpath \
+  && make \
+  && sudo make install
+  ```
