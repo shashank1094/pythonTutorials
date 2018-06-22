@@ -1,25 +1,54 @@
-def fun(a, b, c):
-    print(a, b, c)
+a = [1, 2, 3]
 
+b = a * 3
+c = [a] * 3
+print(b, c)
+a[0] = 4
+print(b, c)
+# def some_func():
+#     try:
+#         return 'from_try'
+#     finally:
+#         return 'from_finally'
+#
+#
+# print(some_func())
 
-# A call with unpacking of dictionary
-d = {'a': 2, 'b': 4, 'c': 10}
-fun(**d)
+# list_ = ['cat1', 'cat2', 'cat3', 'number1', 'number2', 'number3']
+# # Don't name the variable "list" as it is a keyword if you can't think of anything else append a underscore at end
+#
+# my_dict = {}
+#
+# for item in list_:
+#     if "cat" in item:
+#         my_dict[item] = 'categorical'
+#     elif "number" in item:
+#         my_dict[item] = 'numerical'
+#
+# print(my_dict)
 
-
-# A Python program to demonstrate packing of
-# dictionary items using **
-def fun(**kwargs):
-    # kwargs is a dict
-    print(type(kwargs))
-
-    # Printing dictionary items
-    for key in kwargs:
-        print("%s = %s" % (key, kwargs[key]))
-
-
+# def fun(a, b, c):
+#     print(a, b, c)
+#
+#
+# # A call with unpacking of dictionary
+# d = {'a': 2, 'b': 4, 'c': 10}
+# fun(**d)
+#
+#
+# # A Python program to demonstrate packing of
+# # dictionary items using **
+# def fun(**kwargs):
+#     # kwargs is a dict
+#     print(type(kwargs))
+#
+#     # Printing dictionary items
+#     for key in kwargs:
+#         print("%s = %s" % (key, kwargs[key]))
 # Driver code
-fun(name="geeks", ID="101", language="Python")
+# fun(name="geeks", ID="101", language="Python")
+
+
 # import subprocess
 # subprocess.call('jar tvf abc.jar ')
 #
