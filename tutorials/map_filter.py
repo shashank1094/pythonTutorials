@@ -4,7 +4,7 @@ a = np.random.randint(low=1, high=100, size=10)
 print(a)
 
 # FILTER()
-greater_than_50 = filter(lambda x: x > 50)
+greater_than_50 = filter(lambda x: x > 50, a)
 # greater_than_50_list = [x if x > 50 for x in a ] # ERROR : else expected
 greater_than_50_list = [x for x in a if x > 50]
 print(list(greater_than_50), greater_than_50_list)

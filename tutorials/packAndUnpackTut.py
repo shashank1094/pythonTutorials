@@ -16,6 +16,17 @@ def fun(**kwargs):
 # Driver code
 fun(name="geeks", ID="101", language="Python")
 
+# Real life use of unpacking
+a = 42
+b = 47
+
+
+def f():
+    return 42
+
+
+print(locals())
+print("a={a:d}, b={b:d}, strng={strng:20s} and f={f} ".format(**locals(), strng="HELLO WORLD"))
 
 # # A sample program to demonstrate unpacking of
 # # dictionary items using **
