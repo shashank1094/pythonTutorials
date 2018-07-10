@@ -1,10 +1,34 @@
-a = [1, 2, 3]
+print("HELLO WORLD")
 
-b = a * 3
-c = [a] * 3
-print(b, c)
-a[0] = 4
-print(b, c)
+# class GenericMaxException(Exception):
+#     """Base class for all Max layer exceptions."""
+#
+#     def __init__(self, *, message):
+#         """
+#         Constructor.
+#
+#         Parameters:
+#             Required:
+#                 message - String describing exception.
+#
+#             Optional:
+#                 None
+#         """
+#
+#         super().__init__()
+#
+#
+# raise GenericMaxException(message="This is the reason.")
+
+# a = [1, 2, 3]
+#
+# b = a * 3
+# c = [a] * 3
+# print(b, c)
+# a[0] = 4
+# print(b, c)
+
+
 # def some_func():
 #     try:
 #         return 'from_try'

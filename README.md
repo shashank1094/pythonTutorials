@@ -35,4 +35,4 @@ Most important tutorials : [Link](https://www.python-course.eu/)
   --enable-ipv6 --with-threads --with-pydebug --disable-rpath \
   && make \
   && sudo make install
-  ```i
+  ```
