@@ -13,7 +13,7 @@ Most important tutorials : [Link](https://www.python-course.eu/)
 6. [Different printing styles...print()](https://docs.python.org/3/tutorial/inputoutput.html)
 7. [Decorators](https://www.thecodeship.com/patterns/guide-to-python-function-decorators/) , [Another Link](https://www.python-course.eu/python3_decorators.php)
 8. [SetupTools](http://setuptools.readthedocs.io/en/latest/setuptools.html#installing-setuptools)
-9. [MRO](https://www.python-course.eu/python3_multiple_inheritance.php),[Ambigous MRO](https://stackoverflow.com/questions/29214888/typeerror-cannot-create-a-consistent-method-resolution-order-mro)
+9. [MRO](https://www.python-course.eu/python3_multiple_inheritance.php),[Ambigous MRO](https://stackoverflow.com/questions/29214888/typeerror-cannot-create-a-consistent-method-resolution-order-mro), [C3 linearization](https://en.wikipedia.org/wiki/C3_linearization)
 
 # Building Python From Source LINUX
 
