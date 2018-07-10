@@ -1,0 +1,20 @@
+from abc import ABC, abstractmethod
+
+
+class AbstractClassExample(ABC):
+
+    @abstractmethod
+    def do_something(self):
+        print("Some implementation!")
+
+
+class AnotherSubclass(AbstractClassExample):
+    def do_something(self):
+        super().do_something()
+        print("The enrichment from AnotherSubclass")
+
+
+# a1 = AbstractClassExample()
+# a1.do_something()
+x = AnotherSubclass()
+x.do_something()
