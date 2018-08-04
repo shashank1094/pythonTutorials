@@ -1,32 +1,60 @@
 # https://www.python-course.eu/python3_slots.php
 
 
-class student:
-    """Here goes the description for the class."""
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-    # __slots__ = ("__name",)
-    def __init__(self, temp_name):
-        self.name = temp_name
+    @classmethod
+    def from_petname(cls, pet_name):
+        return cls(pet_name, 10)
 
-    @property
-    def name(self):
-        return self.__name
-
-    @name.setter
-    def name(self, name):
-        if type(name) != str:
-            self.__name = None
+    @staticmethod
+    def is_allowed_to_vote(age):
+        if age < 18:
+            print("Can't vote.")
         else:
-            self.__name = name
+            print("Can vote.")
 
 
-s1 = student("shashank")
-print(s1.name)
+class Employee(Person):
+    def __init__(self, name, age, emp_code):
+        super().__init__(name, age)
+        self.emp_code = emp_code
 
-print("DICT OF OBJECT :: ", s1.__dict__)
-print("DICT OF CLASS :: ", student.__dict__)
-print("DIR OF OBJECT :: ", dir(s1))
-print("DIR OF CLASS :: ", dir(student))
+
+p1 = Person("Shashank", 23)
+e1 = Employee("Shashank", 23, 1234)
+print(dir(p1), dir(e1), dir(Person), dir(Employee), sep="\n\n")
+
+
+# class Student:
+#     """Here goes the description for the class."""
+#
+#     # __slots__ = ("__name",)
+#     def __init__(self, temp_name):
+#         self.name = temp_name
+#
+#     @property
+#     def name(self):
+#         return self.__name
+#
+#     @name.setter
+#     def name(self, name):
+#         if type(name) != str:
+#             self.__name = None
+#         else:
+#             self.__name = name
+#
+#
+# s1 = Student("shashank")
+# print(s1.name)
+#
+# print("DICT OF OBJECT :: ", s1.__dict__)
+# print("DICT OF CLASS :: ", Student.__dict__)
+# print("DIR OF OBJECT :: ", dir(s1))
+# print("DIR OF CLASS :: ", dir(Student))
 
 # x = "xtop"
 # y = "ytop"
