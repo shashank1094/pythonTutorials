@@ -1,32 +1,54 @@
 # https://www.python-course.eu/python3_slots.php
 
 
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# https://stackoverflow.com/questions/5587653/inheritance-and-inner-classes-in-python
+class A:
+    yay = True
 
-    @classmethod
-    def from_petname(cls, pet_name):
-        return cls(pet_name, 10)
-
-    @staticmethod
-    def is_allowed_to_vote(age):
-        if age < 18:
-            print("Can't vote.")
-        else:
-            print("Can vote.")
+    class Foo:
+        alice = True
 
 
-class Employee(Person):
-    def __init__(self, name, age, emp_code):
-        super().__init__(name, age)
-        self.emp_code = emp_code
+class B(A):
+    nay = False
+
+    class Foo:
+        bob = False
 
 
-p1 = Person("Shashank", 23)
-e1 = Employee("Shashank", 23, 1234)
-print(dir(p1), dir(e1), dir(Person), dir(Employee), sep="\n\n")
+class B(A):
+    nay = False
+
+    class Foo(A.Foo):
+        bob = False
+
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#
+#     @classmethod
+#     def from_petname(cls, pet_name):
+#         return cls(pet_name, 10)
+#
+#     @staticmethod
+#     def is_allowed_to_vote(age):
+#         if age < 18:
+#             print("Can't vote.")
+#         else:
+#             print("Can vote.")
+#
+#
+# class Employee(Person):
+#     def __init__(self, name, age, emp_code):
+#         super().__init__(name, age)
+#         self.emp_code = emp_code
+#
+#
+# p1 = Person("Shashank", 23)
+# e1 = Employee("Shashank", 23, 1234)
+# print(dir(p1), dir(e1), dir(Person), dir(Employee), sep="\n\n")
 
 
 # class Student:
