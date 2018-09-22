@@ -16,6 +16,7 @@ Most important tutorials : [Link](https://www.python-course.eu/)
 9. [MRO](https://www.python-course.eu/python3_multiple_inheritance.php),[Ambigous MRO](https://stackoverflow.com/questions/29214888/typeerror-cannot-create-a-consistent-method-resolution-order-mro), [C3 linearization](https://en.wikipedia.org/wiki/C3_linearization)
 10. [any() and all()](https://www.geeksforgeeks.org/any-all-in-python/)
 11. [Sorting](https://docs.python.org/3.3/howto/sorting.html)
+12. [Order of precedence in python](https://www.programiz.com/python-programming/precedence-associativity)
 # Building Python From Source LINUX
 
 ```
