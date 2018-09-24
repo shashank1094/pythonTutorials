@@ -17,6 +17,7 @@ Most important tutorials : [Link](https://www.python-course.eu/)
 10. [any() and all()](https://www.geeksforgeeks.org/any-all-in-python/)
 11. [Sorting](https://docs.python.org/3.3/howto/sorting.html)
 12. [Order of precedence in python](https://www.programiz.com/python-programming/precedence-associativity)
+13. [Tilde in Python](https://stackoverflow.com/q/8305199/6758560)
 # Building Python From Source LINUX
 
 ```
