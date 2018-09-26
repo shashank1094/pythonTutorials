@@ -6,9 +6,10 @@ class A:
     def c1(cls):
         print(cls)
         print('class M')
-a1=A()
-a1.c1()
 
+
+a1 = A()
+a1.c1()
 
 # class GenericMaxException(Exception):
 #     """Base class for all Max layer exceptions."""
