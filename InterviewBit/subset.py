@@ -23,24 +23,26 @@
 ans = [[]]
 
 
-def helper(A, index):
-    if index == len(A):
+def helper(li, index):
+    print('lis : {}, index : {}'.format(li, index))
+    if index == len(li):
         return [[]]
-    tmp = helper(A, index + 1)
+    tmp = helper(li, index + 1)
     print('before tmp : {}'.format(tmp))
     r = []
     for i in tmp:
-        t = [A[index]] + i
+        t = [li[index]] + i
         r.append(t)
     print('result : {}'.format(r))
     tmp[1:1] = r
-    print('after : {}'.format(tmp))
+    print('after tmp: {}'.format(tmp))
+    print('DONE lis : {}, index : {}'.format(li, index))
     return tmp
 
 
-def subsets(A):
-    A.sort()
-    return helper(A, 0)
+def subsets(l1):
+    l1.sort()
+    return helper(l1, 0)
 
 
 t = [1, 2, 3]
