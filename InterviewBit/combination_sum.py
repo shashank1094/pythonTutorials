@@ -25,7 +25,8 @@ def combination_helper(choices, target, ans, tmp_result, index):
     if target < 0:
         return
     if target == 0:
-        ans.append(sorted(tmp_result[:]))
+        # ans.append(sorted(tmp_result[:]))
+        ans.append(tmp_result[:])
         return
     while index <= len(choices) - 1 and target - choices[index] >= 0:
         tmp_result.append(choices[index])
@@ -38,7 +39,8 @@ def combination_sum(c, t):
     ans = []
     c = sorted(list(set(c)))
     combination_helper(c, t, ans, [], 0)
-    return sorted(ans)
+    # return sorted(ans)
+    return ans
 
 
-print(combination_sum([2, 3, 6, 7], 15))
+print(combination_sum([2, 3, 4], 8))
