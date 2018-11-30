@@ -3,7 +3,7 @@ The best python tutorials I can make while I learn Python 3.
 
 # Useful Links
 
-Most important tutorials : [Link](https://www.python-course.eu/)
+Most important tutorials : [Link](https://www.python-course.eu/python3_course.php)
 
 1. [MarkDown Tutorials](https://guides.github.com/features/mastering-markdown/)
 2. [UnderScore In Python](https://hackernoon.com/understanding-the-underscore-of-python-309d1a029edc)
