@@ -45,4 +45,4 @@ def combine(n, k):
     return sol(1, n + 1, k)
 
 
-print(combine(4, 3))
+print(combine(4, 2))
