@@ -22,6 +22,7 @@ Most important tutorials : [Link](https://www.python-course.eu/python3_course.ph
 15. [Yield](https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do)
 16. [Lambda, filter, reduce and map](https://www.python-course.eu/python3_lambda.php)
 17. reversed() returns iterator and sorted() returns list, [Difference between reversed(list) and list.sort(reverse=True)](https://stackoverflow.com/q/9969698/6758560) 
+18. [MetaClasses](https://realpython.com/python-metaclasses/)
 # Building Python From Source LINUX
 
 ```
