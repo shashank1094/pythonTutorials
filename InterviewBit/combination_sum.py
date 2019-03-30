@@ -43,4 +43,4 @@ def combination_sum(c, t):
     return ans
 
 
-print(combination_sum([2, 3, 4], 8))
+print(combination_sum([2, 3, 4], 13))

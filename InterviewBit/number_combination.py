@@ -16,40 +16,40 @@
 #  Still have a doubt? Checkout Sample Codes for more details.
 
 
-ans = [[]]
-
-
-class Solution:
-    phone = {'0': ['0'],
-             '1': ['1'],
-             '2': ['a', 'b', 'c'],
-             '3': ['d', 'e', 'f'],
-             '4': ['g', 'h', 'i'],
-             '5': ['j', 'k', 'l'],
-             '6': ['m', 'n', 'o'],
-             '7': ['p', 'q', 'r', 's'],
-             '8': ['t', 'u', 'v'],
-             '9': ['w', 'x', 'y', 'z']}
-
-    def comb_helper(self, s):
-        global ans
-        for index in range(len(s)):
-            tmp = []
-            for tmp_ans in ans[:]:
-                for option in self.phone[s[index]]:
-                    tmp.append(tmp_ans + [option])
-            ans = tmp
-
-    def letter_combinations(self, s1):
-        global ans
-        self.comb_helper(s1)
-        ans = [''.join(x) for x in ans]
-        return ' '.join(ans)
-
-
-if __name__ == '__main__':
-    sol1 = Solution()
-    print(sol1.letter_combinations('23'))
+# ans = [[]]
+#
+#
+# class Solution:
+#     phone = {'0': ['0'],
+#              '1': ['1'],
+#              '2': ['a', 'b', 'c'],
+#              '3': ['d', 'e', 'f'],
+#              '4': ['g', 'h', 'i'],
+#              '5': ['j', 'k', 'l'],
+#              '6': ['m', 'n', 'o'],
+#              '7': ['p', 'q', 'r', 's'],
+#              '8': ['t', 'u', 'v'],
+#              '9': ['w', 'x', 'y', 'z']}
+#
+#     def comb_helper(self, s):
+#         global ans
+#         for index in range(len(s)):
+#             tmp = []
+#             for tmp_ans in ans[:]:
+#                 for option in self.phone[s[index]]:
+#                     tmp.append(tmp_ans + [option])
+#             ans = tmp
+#
+#     def letter_combinations(self, s1):
+#         global ans
+#         self.comb_helper(s1)
+#         ans = [''.join(x) for x in ans]
+#         return ' '.join(ans)
+#
+#
+# if __name__ == '__main__':
+#     sol1 = Solution()
+#     print(sol1.letter_combinations('23'))
 
 
 class Solution:
@@ -86,4 +86,4 @@ class Solution:
 
 if __name__ == '__main__':
     sol2 = Solution()
-    print(sol2.letter_combinations('234'))
+    print(sol2.letter_combinations('23456'))

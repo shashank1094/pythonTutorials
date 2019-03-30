@@ -44,4 +44,4 @@ class Solution:
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.combine(4, 3))
+    print(s.combine(4, 2))

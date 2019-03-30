@@ -47,5 +47,5 @@ class Solution:
 
 if __name__ == '__main__':
     sol1 = Solution()
-    print(sol1.getPermutation(3, 4))
+    print(sol1.getPermutation(8, 18))
 
