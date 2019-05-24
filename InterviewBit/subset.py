@@ -68,4 +68,4 @@ class Solution:
 
 
 if __name__ == '__main__':
-    print(Solution().subsets([3, 1, 2, 5, 7, 9, 4, 6, 8]))
+    print(Solution().subsets([3, 1, 2]))
