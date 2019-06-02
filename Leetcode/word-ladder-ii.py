@@ -19,12 +19,13 @@ class Solution:
         if endWord not in wordList:
             return self.ans
         self.util(beginWord, endWord, wordList, [])
-        final_ans = []
-        min = float("inf")
-        for x in self.ans:
-            if len(x) < min:
-                min = len(x)
-        return [x for x in self.ans if len(x) == min]
+        # final_ans = []
+        # min = float("inf")
+        # for x in self.ans:
+        #     if len(x) < min:
+        #         min = len(x)
+        # return [x for x in self.ans if len(x) == min]
+        return self.ans
 
     def util(self, a, z, word_list, curr_ans):
         curr_ans.append(a)
@@ -43,5 +44,5 @@ class Solution:
 
 
 if __name__ == '__main__':
-    for x in Solution().findLadders("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"]):
+    for x in Solution().findLadders("hit", "cog", ["hot","dot","dog","lot","log","cog"] ):
         print(x, end="\n\n")
