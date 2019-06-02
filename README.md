@@ -23,7 +23,8 @@ Most important tutorials : [Link](https://www.python-course.eu/python3_course.ph
 16. [Lambda, filter, reduce and map](https://www.python-course.eu/python3_lambda.php)
 17. reversed() returns iterator and sorted() returns list, [Difference between reversed(list) and list.sort(reverse=True)](https://stackoverflow.com/q/9969698/6758560) 
 18. [MetaClasses](https://realpython.com/python-metaclasses/)
-19. [Pathlib] (https://treyhunner.com/2018/12/why-you-should-be-using-pathlib/)
+19. [Pathlib](https://treyhunner.com/2018/12/why-you-should-be-using-pathlib/)
+20. [Modulus Properties](https://www.quora.com/What-are-all-the-properties-of-modulo-which-can-be-used-in-programming-competitions)
 # Building Python From Source LINUX
 
 ```
