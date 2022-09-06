@@ -4,3 +4,4 @@ venv/
 venvs/
 env/
 *.pyc
+/venvpy3/
