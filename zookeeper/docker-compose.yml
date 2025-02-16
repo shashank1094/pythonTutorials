@@ -1,0 +1,13 @@
+services:
+  zookeeper:
+    image: docker.io/bitnami/zookeeper:latest
+    ports:
+      - '2181:2181'
+    volumes:
+      - 'zookeeper_data:/bitnami/zookeeper'
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+
+volumes:
+  zookeeper_data:
+    driver: local
