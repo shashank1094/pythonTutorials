@@ -27,6 +27,7 @@ class Solution:
         dfs(root)
         return lca
 
+    # O(n)
     def lowestCommonAncestor(self, p: 'Node', q: 'Node') -> 'Node':
         visited_map = {}
         lca = None
