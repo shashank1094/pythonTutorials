@@ -42,5 +42,5 @@ class Solution:
 
 
 if __name__ == '__main__':
-    for _row in Solution().solveNQueens(1):
+    for _row in Solution().solveNQueens(4):
         print(_row)

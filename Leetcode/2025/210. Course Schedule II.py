@@ -83,3 +83,6 @@ if __name__ == '__main__':
     num_of_courses = 4
     print(SolutionRecursive().findOrder(num_of_courses, prerequisites))
     print(SolutionIterative().findOrder(num_of_courses, prerequisites))
+    prerequisites.append([0, 3])
+    print(SolutionRecursive().findOrder(num_of_courses, prerequisites))
+    print(SolutionIterative().findOrder(num_of_courses, prerequisites))
