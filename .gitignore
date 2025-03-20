@@ -5,3 +5,4 @@ venvs/
 env/
 *.pyc
 /venvpy3/
+wi/
