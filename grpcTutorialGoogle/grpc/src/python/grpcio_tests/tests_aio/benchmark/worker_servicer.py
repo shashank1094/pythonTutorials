@@ -334,7 +334,7 @@ class WorkerServicer(worker_service_pb2_grpc.WorkerServiceServicer):
                     _LOGGER.debug('Fetching status...')
                     await call.write(request)
                     sub_status = await call.read()
-                    result.merge(sub_status.stats.latencies)
+                    result.merge_dicts(sub_status.stats.latencies)
                     _LOGGER.debug('Update from sub worker count=[%d]',
                                   sub_status.stats.latencies.count)
 
